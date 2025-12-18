@@ -13,13 +13,6 @@ Middle 12%
 Left Middle 4%
 Right Middle 4%
 
-Red Zone / Normal Downs
-Left 37%
-Right 37%
-Middle 15%
-Left Middle 6%
-Right Middle 6%
-
 Yard line weighting
 Yard line selection is weighted on every mode that generates a yard line.
 The app filters to the allowed yard-line range for that mode/difficulty, then re-normalizes probabilities while keeping the same relative likelihoods.
