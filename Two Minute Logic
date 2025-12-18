@@ -1,49 +1,39 @@
-Two Minute logic (only when the field is set to Random)
+Two Minute
 
-Random (difficulty = 0)
-Clock: 1:58–1:00 or 0:59–0:30
-Score differential (weights): -8(11), -7(25), -6(11), -5(1), -4(9), -3(25), -2(7), -1(11)
-Yard line (weighted table): heavy at -25 (25); mix of -10 to -49 plus 40–50 (all small weights)
-Off TO (weights): 0(10), 1(30), 2(35), 3(25)
-Def TO (weights): 0(10), 1(30), 2(35), 3(25)
-Hash (weights): Left(40), Right(40), Middle(12), Left Middle(4), Right Middle(4)
+Difficulty slider values
+Random
+Easy
+Medium-Easy
+Medium
+Hard-Medium
+Hard
 
-Easy (difficulty = 1)
-Clock: 2:12–2:00 or 1:59–1:28
-Score differential (weights): -3(34), -2(33), -1(33)
-Yard line: uniform random from -25 to -49
-Off TO (weights): 2(75), 3(25)
-Def TO (weights): 0(10), 1(30), 2(35), 3(25)
-Hash: same as above
+Clock (if Clock = Random)
+Random: 1:58–1:00 OR 0:59–0:30
+Easy: 2:12–2:00 OR 1:59–1:28
+Medium-Easy: 1:40–1:15
+Medium: 1:30–1:00 OR 0:59–0:45
+Hard-Medium: 1:15–1:00 OR 0:59–0:40
+Hard: 1:03–1:00 OR 0:59–0:35
 
-Easy-Medium (difficulty = 2)
-Clock: 1:40–1:15
-Score differential (weights): -6(15), -5(5), -4(25), -3(25), -2(5), -1(25)
-Yard line: uniform random from -25 to -49
-Off TO (weights): 1(10), 2(65), 3(25)
-Def TO (weights): 0(10), 1(30), 2(35), 3(25)
-Hash: same as above
+Score Differential (if Score Differential = Random)
+Random: -8 (11), -7 (25), -6 (11), -5 (1), -4 (9), -3 (25), -2 (7), -1 (11)
+Easy: -3 (34), -2 (33), -1 (33)
+Medium-Easy: -6 (15), -5 (5), -4 (25), -3 (25), -2 (5), -1 (25)
+Medium: -7 (30), -6 (15), -5 (5), -4 (10), -3 (40)
+Hard-Medium: -7 (50), -6 (15), -5 (5), -4 (10), -3 (20)
+Hard: -8 (10), -7 (60), -6 (10), -5 (5), -4 (15)
 
-Medium (difficulty = 3)
-Clock: 1:30–1:00 or 0:59–0:45
-Score differential (weights): -7(30), -6(15), -5(5), -4(10), -3(40)
-Yard line: uniform random from -20 to -49
-Off TO (weights): 1(30), 2(50), 3(20)
-Def TO (weights): 0(10), 1(30), 2(35), 3(25)
-Hash: same as above
+Offensive Timeouts (if Offensive Timeouts = Random)
+Random: 0 (10), 1 (30), 2 (35), 3 (25)
+Easy: 2 (75), 3 (25)
+Medium-Easy: 1 (10), 2 (65), 3 (25)
+Medium: 1 (30), 2 (50), 3 (20)
+Hard-Medium: 0 (20), 1 (70), 2 (10)
+Hard: 0 (40), 1 (60)
 
-Medium-Hard (difficulty = 4)
-Clock: 1:15–1:00 or 0:59–0:40
-Score differential (weights): -7(50), -6(15), -5(5), -4(10), -3(20)
-Yard line: same weighted table as Random (heavy -25, includes -10..-49 and 40–50)
-Off TO (weights): 0(20), 1(70), 2(10)
-Def TO (weights): 0(10), 1(30), 2(35), 3(25)
-Hash: same as above
+Defensive Timeouts (if Defensive Timeouts = Random)
+0 (10), 1 (30), 2 (35), 3 (25)
 
-Hard (difficulty = 5)
-Clock: 1:03–1:00 or 0:59–0:35
-Score differential (weights): -8(10), -7(60), -6(10), -5(5), -4(15)
-Yard line: uniform random from -8 to -31
-Off TO (weights): 0(40), 1(60)
-Def TO (weights): 0(10), 1(30), 2(35), 3(25)
-Hash: same as above
+Yard Line (if Yard Line = Random)
+Uses the global yard probability, filtered to the allowed range for the selected difficulty, then re-normalized.
