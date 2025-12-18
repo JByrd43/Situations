@@ -1,1 +1,17 @@
+Red Zone
 
+Slider buckets
+Random: yard line selected from +20 to +1
+Fringe: +30 to +21
+High Red Zone: +20 to +12
+Low Red Zone: +11 to +4
+Goal Line: +3 to +1
+
+Yard Line (if Yard Line = Random)
+Weighted by the Red Zone yard probability table (30 down to 1), filtered to the bucket range, then re-normalized.
+
+Score Differential options
+Random, +3, +2, +1, 0, -1 to -8
+
+Hash
+Random (weighted per Red Zone hash rules) or user-selected.
