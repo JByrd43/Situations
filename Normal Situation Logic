@@ -1,1 +1,10 @@
+Normal Downs
 
+User options
+None. The app generates the situation.
+
+Yard line
+Weighted using the Normal Downs yard probability table you provided (filtered to those values, then re-normalized).
+
+Hash
+Random (weighted per Normal Downs hash rules).
